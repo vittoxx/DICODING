@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.head_bar {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.head_bar h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.head_bar p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.input_section,
+.book_shelf {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    padding: 20px;
+}
+
+.input_section h2,
+.book_shelf h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input_section .input {
+    margin-bottom: 10px;
+    
+}
+
+.input_section .input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.input_section .input input,
+.input_section .input select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+
+.input_section .input_inline {
+    display: flex;
+    align-items: center;
+}
+
+.input_section .input_inline label {
+    margin-right: 10px;
+    color: white;
+    font-size: small;
+}
+
+.book_list {
+    margin-top: 10px;
+}
+
+
+.book_item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book_item h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.book_item p {
+    margin: 0;
+    color: #666;
+}
+
+.book_item .action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #464646;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6b0707;
+}
+
+
+@media (max-width: 768px) {
+    .input_section,
+    .book_shelf {
+        padding: 15px;
+    }
+
+    .head_bar h1 {
+        font-size: 28px;
+    }
+
+    .head_bar p {
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+}
